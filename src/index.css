@@ -1,0 +1,68 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+:root {
+  font-family: "Inter", Arial, sans-serif;
+  color: #1e293b;
+  background: #f5f7fb;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --page-bg: #f5f7fb;
+  --sidebar-bg: #ffffff;
+  --card-bg: #ffffff;
+  --text-main: #1e293b;
+  --text-muted: #7b8798;
+  --border-color: #e8edf4;
+  --accent: #365cf5;
+  --hover-bg: #f0f4ff;
+}
+
+:root[data-theme="dark"] {
+  color: #e5eaf4;
+  background: #111827;
+
+  --page-bg: #111827;
+  --sidebar-bg: #182234;
+  --card-bg: #1b2638;
+  --text-main: #e5eaf4;
+  --text-muted: #a2aec2;
+  --border-color: #2c394d;
+  --accent: #7b96ff;
+  --hover-bg: #25334b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--page-bg);
+  color: var(--text-main);
+  transition: background 0.2s, color 0.2s;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+#root {
+  min-height: 100vh;
+}
